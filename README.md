@@ -7,9 +7,11 @@ The clock started out as an off-the-shelf nixie-style LED clock from Amazon. Its
 - I swapped the original controller for a Raspberry Pi Zero, which gives the clock Wi-Fi and a web settings page.
 - I wrote the software in this repo to drive the existing LEDs.
 
-![NixiClock showing 06:39:29 in a warm orange](docs/clock.jpg)
+![NixiClock showing 07:48:19](docs/clock-shelf.jpg)
 
-*Showing 06:39:29 in warm orange, a nixie-tube look made with LEDs.*
+![NixiClock showing 06:39:29](docs/clock.jpg)
+
+*A nixie-tube look made with LEDs: each numeral is a separate edge-lit pane, lit here in warm orange.*
 
 ## Web control page
 
