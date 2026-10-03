@@ -2,7 +2,9 @@
 
 A six-digit, nixie-style LED clock run by a **Raspberry Pi**, with a phone-friendly web page for changing its colors and lighting modes. Each digit has its own 20 addressable LEDs, one pair per numeral 0-9, so every digit can have its own color and the clock can run animated effects.
 
-<!-- PHOTOS: add photos of the clock here, e.g. ![NixiClock](docs/clock.jpg) -->
+![NixiClock showing 06:39:29 in a warm orange](docs/clock.jpg)
+
+*Showing 06:39:29 in warm orange, a nixie-tube look made with LEDs.*
 
 ## Web control page
 
