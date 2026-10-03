@@ -1,6 +1,11 @@
 # NixiClock
 
-A six-digit, nixie-style LED clock run by a **Raspberry Pi**, with a phone-friendly web page for changing its colors and lighting modes. Each digit has its own 20 addressable LEDs, one pair per numeral 0-9, so every digit can have its own color and the clock can run animated effects.
+A six-digit, nixie-style LED clock run by a **Raspberry Pi Zero**, with a phone-friendly web page for changing its colors and lighting modes. Each digit has its own 20 addressable LEDs, one pair per numeral 0-9, so every digit can have its own color and the clock can run animated effects.
+
+The clock started out as an off-the-shelf nixie-style LED clock from Amazon. Its original electronics and software were poor, so I replaced them:
+- I mapped out how the existing LEDs were wired: which pair lights which numeral in each digit.
+- I swapped the original controller for a Raspberry Pi Zero, which gives the clock Wi-Fi and a web settings page.
+- I wrote the software in this repo to drive the existing LEDs.
 
 ![NixiClock showing 06:39:29 in a warm orange](docs/clock.jpg)
 
@@ -37,8 +42,9 @@ Served straight from the clock on port 80, so you open `http://<pi-address>/` fr
 
 ## Hardware
 
-- Raspberry Pi with Wi-Fi
-- 120 WS2812/NeoPixel-type LEDs (6 digits × 20), data on **GPIO 12** (`board.D12`), GRB order
+- The case, digit panels and LED boards from the original clock. Only the controller was replaced.
+- Raspberry Pi Zero with Wi-Fi (Zero W or Zero 2 W)
+- The clock's existing 120 addressable LEDs (6 digits × 20), driven as one WS2812/NeoPixel-type chain: data on **GPIO 12** (`board.D12`), GRB order
 - A suitable 5 V supply for the LEDs
 
 ## Install
